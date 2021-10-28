@@ -32,6 +32,10 @@ def predecir_im(im, invertir=True):
     resultado = np.argmax(resultado, axis=-1)
     return int(resultado[0])
 
+@app.route("/")
+def index():
+    return "hola unam"
+
 @app.route("/api", methods=["POST"])
 def main():
     miJSON = request.json
