@@ -3,7 +3,6 @@ from PIL import Image,ImageOps
 from urllib.request import urlopen
 
 from flask import Flask, request, jsonify
-import matplotlib.pyplot as plt
 import numpy as np
 
 from tensorflow.keras.preprocessing.image import img_to_array
