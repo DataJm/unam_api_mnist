@@ -2,14 +2,14 @@ import base64, secrets, io, os
 from PIL import Image,ImageOps
 from urllib.request import urlopen
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import numpy as np
 
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-model = load_model("mnist_trained.h5")
+model = load_model("./procesamiento/mnist_trained.h5")
 
 app = Flask(__name__)
 
@@ -34,7 +34,7 @@ def predecir_im(im, invertir=True):
 
 @app.route("/")
 def index():
-    return "hola unam"
+    return render_template("index.html")
 
 @app.route("/api", methods=["POST"])
 def main():

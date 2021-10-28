@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>mnist demo</title>
+</head>
+<body>
+    <h1>¡Hola UNAM!</h1>
+    <p>Utiliza este espacio para dibujar un número</p>
+    <canvas id="canvas"></canvas>
+    <hr>
+    <button onclick="resize()">Limpiar</button>
+    <button onclick="enviarApi()">Convertir en número</button>
+    <h3 id="respuesta" style="visibility: hidden;"></h3>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="static/js/logic.js"></script>
+</html>
