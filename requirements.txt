@@ -69,7 +69,6 @@ Pygments==2.10.0
 pyparsing==3.0.3
 pyrsistent==0.18.0
 python-dateutil==2.8.2
-pywinpty==1.1.4
 pyzmq==22.3.0
 qtconsole==5.1.1
 QtPy==1.11.2
