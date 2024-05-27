@@ -3,5 +3,4 @@ requests
 flask
 numpy
 tensorflow
-PIL
-secrets
+pillow
