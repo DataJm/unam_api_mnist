@@ -1,7 +1,7 @@
 pyOpenSSL
-secrets
 urllib
 flask
 numpy
 tensorflow
 PIL
+secrets
